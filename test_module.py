@@ -76,13 +76,13 @@ class UnitTests(unittest.TestCase):
         self.rect.set_width(7)
         self.rect.set_height(3)
         actual = self.rect.get_picture()
-        expected = "*******\n*******\n*******\n"
+        expected = "*******\n*******\n*******"
         self.assertEqual(actual, expected, 'Expected rectangle picture to be different.')     
 
     def test_squaree_picture(self):
         self.sq.set_side(2)
         actual = self.sq.get_picture()
-        expected = "**\n**\n"
+        expected = "**\n**"
         self.assertEqual(actual, expected, 'Expected square picture to be different.')   
 
     def test_big_picture(self):
